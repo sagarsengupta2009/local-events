@@ -1,7 +1,7 @@
 import { FETCH_EVENT_REQUEST, FETCH_EVENT_SUCCESS, FETCH_EVENT_FAILURE } from './actionTypes';
 
 const initialState = {
-    data: null,
+    data: [],
     loading: false,
     error: null
 };

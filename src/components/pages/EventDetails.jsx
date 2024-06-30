@@ -1,8 +1,20 @@
+import { useEffect } from 'react';
 import Music from '../../assets/Music.jpg';
+import { useParams } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+// import { fetchDataById } from '../../state/actions';
 
 function EventDetails() {
-    return (
 
+    // const { id } = useParams(); // Get id from route params
+    // const dispatch = useDispatch();
+    // const data = useSelector(state => state.data);
+
+    // useEffect(() => {
+    //     dispatch(fetchDataById(id)); // Fetch data based on id
+    // }, [ id]);
+
+    return (
         <div className="details-container">
             <img src={Music} alt="Intezaar Tera Tour - Raghav Meattle" className="event-image" />
             <div className="event-details">
@@ -28,5 +40,13 @@ function EventDetails() {
         </div>
     )
 }
+
+
+// function mapStateToProps(state, props) {
+//     const eventDetails = state.events.filter( event => event.id === props.eventId)
+//     return {
+//         eventDetails
+//     }
+// }
 
 export default EventDetails;

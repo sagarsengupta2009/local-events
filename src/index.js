@@ -5,14 +5,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './state/store';
+import { fetchAllEvents } from './state/eventsSlice';
+
+// Loading all events on load of application
+store.dispatch(fetchAllEvents());
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-    <App />
+      const dispatch = useDispatch();
+      <App />
     </Provider>
-    
   </React.StrictMode>
 );
 
