@@ -1,6 +1,8 @@
-import Card from "../shared/Card";
+import { useNavigate } from 'react-router-dom';
 
 function EventItem({ item }) {
+    const navigate = useNavigate();
+
     const getImgName = (name) => {
         return name.split(' ').join('');
     }
@@ -10,8 +12,12 @@ function EventItem({ item }) {
         return date;
     }
 
+    const onEventClick = (id) => {
+        navigate(`/details/${id}`); // Navigate to /details/:id
+      };
+
     return (
-        <div className="card">
+        <div className="card" onClick={() => onEventClick(item.id)}>
             <img src={require(`../../assets/${getImgName(item.category)}.jpg`)} alt={item.category} />
             <div className="card-content">
                 <h3>{item.category}</h3>
