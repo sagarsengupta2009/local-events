@@ -12,12 +12,12 @@ function EventItem({ item }) {
         return date;
     }
 
-    const onEventClick = (id) => {
+    const onButtonClick = (id) => {
         navigate(`/details/${id}`); // Navigate to /details/:id
-      };
+    };
 
     return (
-        <div className="card" onClick={() => onEventClick(item.id)}>
+        <div className="card">
             <img src={require(`../../assets/${getImgName(item.category)}.jpg`)} alt={item.category} />
             <div className="card-content">
                 <h3>{item.category}</h3>
@@ -25,7 +25,7 @@ function EventItem({ item }) {
                 <p>{item.time} , {formatDate(item.date)}</p>
                 <p>Location: {item.city}</p>
                 <p>Venue: {item.venue}</p>
-                <a href="#" className="btn">Buy</a>
+                <button onClick={() => onButtonClick(item.id)} className="btn">Buy</button>
             </div>
         </div>
     )

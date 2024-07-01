@@ -96,6 +96,7 @@ header {
   border-radius: 4px;
   text-align: center;
   transition: background-color 0.3s ease;
+  font-size: 1rem;
 }
 
 .card-content .btn:hover {
@@ -315,7 +316,7 @@ input:focus {
   display: flex;
   justify-content: space-between;
   position: relative;
-  border: 1px solid black;
+  box-shadow: 10px 5px 5px rgb(138, 126, 126);
   padding: 2% 4%;
 }
 
@@ -523,4 +524,8 @@ input:focus {
 
 .description {
   line-height: 1.6;
+}
+
+.description h2 {
+  margin-top: 2%;
 }

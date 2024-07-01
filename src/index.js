@@ -14,7 +14,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      const dispatch = useDispatch();
       <App />
     </Provider>
   </React.StrictMode>
