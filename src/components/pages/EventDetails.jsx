@@ -1,4 +1,3 @@
-import Music from '../../assets/Music.jpg';
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import Spinner from '../shared/Spinner';
@@ -10,13 +9,17 @@ function EventDetails() {
     const isLoading = useSelector(state => state.events.loading);
 
     let selectedEvent = events.find(item => {
-        return item.id === id;
+        return item.id === Number(id);
     });
+
+    const getImgName = (name) => {
+        return name.split(' ').join('');
+    }
 
     return isLoading ?
         <Spinner /> : (
             <div className="details-container">
-                <img src={Music} alt="Intezaar Tera Tour - Raghav Meattle" className="event-image" />
+                <img src={require(`../../assets/${getImgName(selectedEvent.category)}.jpg`)} alt="Intezaar Tera Tour - Raghav Meattle" className="event-image" />
                 <div className="event-details">
                     <h1>{selectedEvent.category}</h1>
                     <div className="event-info">

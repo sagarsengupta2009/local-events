@@ -529,3 +529,53 @@ input:focus {
 .description h2 {
   margin-top: 2%;
 }
+
+/* Location Selector */
+.location-selector {
+  font-family: Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+}
+
+.location-dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.location-dropdown {
+  width: 200px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  background-image: none;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+.location-dropdown:focus {
+  border-color: #007bff;
+}
+
+.dropdown-arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #333;
+  transform: translateY(-50%);
+}
+
+.selected-location {
+  font-size: 16px;
+  color: #007bff;
+  margin-top: 10px;
+}

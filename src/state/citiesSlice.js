@@ -6,29 +6,29 @@ const initialState = {
     error: null
 };
 
-const eventsSlice = createSlice({
-    name: "allEvents",
+const citiesSlice = createSlice({
+    name: "cities",
     initialState,
     reducers: {},
     extraReducers: (builder) => {
-        builder.addCase(fetchAllEvents.pending, (state) => {
+        builder.addCase(fetchCities.pending, (state) => {
             console.log('pending');
             state.loading = true;
         })
-        builder.addCase(fetchAllEvents.fulfilled, (state, action) => {
+        builder.addCase(fetchCities.fulfilled, (state, action) => {
             state.data = action.payload;
             state.loading = false;
         })
     }
 })
 
-export const fetchAllEvents = createAsyncThunk(
-    "allEvents/fetchAllEvents",
+export const fetchCities = createAsyncThunk(
+    "cities/fetchCities",
     async () => {
-        const response = await fetch('http://localhost:5000/allEvents');
+        const response = await fetch('http://localhost:5000/locations');
         const data = await response.json();
         return data;
     }
 );
 
-export default eventsSlice.reducer;
+export default citiesSlice.reducer;

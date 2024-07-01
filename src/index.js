@@ -6,9 +6,12 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './state/store';
 import { fetchAllEvents } from './state/eventsSlice';
+import { fetchCities } from './state/citiesSlice';
 
 // Loading all events on load of application
-store.dispatch(fetchAllEvents());
+store.dispatch(fetchAllEvents())
+//Loading all locations
+store.dispatch(fetchCities());
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
