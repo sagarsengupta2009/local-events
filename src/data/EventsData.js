@@ -166,6 +166,6 @@ const AllEventsData = [
         ticketPrice: '1999 INR'
     }
 
-  ]
+]
 
-  export default AllEventsData;
+export default AllEventsData;

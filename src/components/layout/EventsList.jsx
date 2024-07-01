@@ -1,19 +1,18 @@
-import { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { motion, AnimatePresence } from 'framer-motion';
 import EventItem from "./EventItem";
 import Spinner from '../shared/Spinner';
 
 
 function EventsList() {
-  const [eventList, setEventList] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const [fetchError, setFetchError] = useState(null);
-  const events = useSelector(state => state.events.data);
+  const events = useSelector(
+    state => {
+      return state.events.data
+    });
+  const isLoading = useSelector(state => state.events.loading);
 
-  // return loading ?
-  //   <Spinner /> :
-  return (
+  return isLoading ?
+    <Spinner /> : (
       <div className='event-list'>
         <AnimatePresence>
           {events.map((item) => (

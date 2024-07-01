@@ -19,7 +19,7 @@ export const ColorProvider = ({ children }) => {
         }
     )
 
-    
+
 
     //Set item to be updated
     const editFeedback = (item) => {
@@ -34,7 +34,7 @@ export const ColorProvider = ({ children }) => {
         isLoading,
         feedbackEdit,
         deleteFeedback,
-        addFeedback, 
+        addFeedback,
         editFeedback,
         updateFeedback
     }}>

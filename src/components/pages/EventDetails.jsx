@@ -1,44 +1,44 @@
-import { useEffect } from 'react';
 import Music from '../../assets/Music.jpg';
 import { useParams } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
-// import { fetchDataById } from '../../state/actions';
+import { useSelector } from 'react-redux';
+import Spinner from '../shared/Spinner';
 
 function EventDetails() {
 
-    // const { id } = useParams(); // Get id from route params
-    // const dispatch = useDispatch();
-    // const data = useSelector(state => state.data);
+    const { id } = useParams(); // Get id from route params
+    const events = useSelector(state => state.events.data);
+    const isLoading = useSelector(state => state.events.loading);
 
-    // useEffect(() => {
-    //     dispatch(fetchDataById(id)); // Fetch data based on id
-    // }, [ id]);
+    let selectedEvent = events.find(item => {
+        return item.id === id;
+    });
 
-    return (
-        <div className="details-container">
-            <img src={Music} alt="Intezaar Tera Tour - Raghav Meattle" className="event-image" />
-            <div className="event-details">
-                <h1>Intezaar Tera Tour - Raghav Meattle</h1>
-                <div className="event-info">
-                    <div>
-                        <p><strong>Date:</strong> June 30, 2024</p>
-                        <p><strong>Time:</strong> 7:00 PM</p>
+    return isLoading ?
+        <Spinner /> : (
+            <div className="details-container">
+                <img src={Music} alt="Intezaar Tera Tour - Raghav Meattle" className="event-image" />
+                <div className="event-details">
+                    <h1>{selectedEvent.category}</h1>
+                    <div className="event-info">
+                        <div>
+                            <p><strong>Date : </strong>{selectedEvent.date}</p>
+                            <p><strong>Time : </strong>{selectedEvent.time}</p>
+                        </div>
+                        <div>
+                            <p><strong>Venue : </strong>{selectedEvent.venue} , {selectedEvent.city}</p>
+                            <p><strong>Price : </strong> {selectedEvent.ticketPrice} onwards</p>
+                        </div>
                     </div>
-                    <div>
-                        <p><strong>Venue:</strong> Some Venue, Bengaluru</p>
-                        <p><strong>Price:</strong> ₹499 onwards</p>
+                    <button className="book-button">Book Now</button>
+                    <div className="description">
+                        <h2>About the Event</h2>
+                        <p>Join Raghav Meattle on his Intezaar Tera Tour for an unforgettable night of music in Bengaluru. Experience his soulful melodies and heartfelt lyrics live in concert.</p>
+                        <h2>Artist Information</h2>
+                        <p>Raghav Meattle is an Indian singer-songwriter known for his indie-pop style and emotive performances. His music blends acoustic melodies with thoughtful lyrics, creating a unique and captivating sound.</p>
                     </div>
-                </div>
-                <button className="book-button">Book Now</button>
-                <div className="description">
-                    <h2>About the Event</h2>
-                    <p>Join Raghav Meattle on his Intezaar Tera Tour for an unforgettable night of music in Bengaluru. Experience his soulful melodies and heartfelt lyrics live in concert.</p>
-                    <h2>Artist Information</h2>
-                    <p>Raghav Meattle is an Indian singer-songwriter known for his indie-pop style and emotive performances. His music blends acoustic melodies with thoughtful lyrics, creating a unique and captivating sound.</p>
                 </div>
             </div>
-        </div>
-    )
+        )
 }
 
 

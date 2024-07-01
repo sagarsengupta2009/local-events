@@ -11,10 +11,15 @@ const eventsSlice = createSlice({
     initialState,
     reducers: {},
     extraReducers: (builder) => {
+        builder.addCase(fetchAllEvents.pending, (state, action) => {
+            console.log('pending');
+            state.loading = true;
+        })
         builder.addCase(fetchAllEvents.fulfilled, (state, action) => {
             state.data = action.payload;
+            state.loading = false;
         })
-    }  
+    }
 })
 
 export const fetchAllEvents = createAsyncThunk(
@@ -22,7 +27,7 @@ export const fetchAllEvents = createAsyncThunk(
     async () => {
         const response = await fetch('http://localhost:5000/allEvents');
         const data = await response.json();
-        return data; 
+        return data;
     }
 );
 
