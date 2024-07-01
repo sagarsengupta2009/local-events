@@ -165,5 +165,16 @@
             "desc": "A wonderful electronic musical journey with the world famous dj Ben Bohmer",
             "ticketPrice": "1999 INR"
         }
+    ],
+    "locations": [
+        "Bangalore",
+        "Kolkata",
+        "Mumbai",
+        "Hyderabad",
+        "Delhi",
+        "Pune",
+        "Chennai",
+        "Chandigarh",
+        "Gurgaon"
     ]
 }

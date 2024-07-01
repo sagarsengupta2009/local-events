@@ -1,10 +1,10 @@
-import PorpTypes from 'prop-types';
 import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import AutoCompleteSearchData from '../../data/SearchData';
 import ToggleButton from '../shared/ToggleButton';
 import { useNavigate } from 'react-router-dom';
+import LocationSelector from './LocationSelector';
 
 function Header({ text = 'Local Events', bgColor, txtColor }) {
   const navigate = useNavigate();
@@ -22,12 +22,15 @@ function Header({ text = 'Local Events', bgColor, txtColor }) {
       <div>
         <h2 onClick={handleOnClick} style={{ cursor: 'pointer' }}>{text}</h2>
       </div>
+      <div>
+        <LocationSelector />
+      </div>
       <Stack spacing={2} sx={{ width: 300 }}>
         <Autocomplete
           freeSolo
           id="free-solo-2-demo"
           disableClearable
-          options={AutoCompleteSearchData.map((option) => option.title)}
+          options={AutoCompleteSearchData.map((option) => option.category)}
           renderInput={(params) => (
             <TextField
               {...params}
