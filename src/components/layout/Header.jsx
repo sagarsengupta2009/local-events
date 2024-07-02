@@ -5,6 +5,7 @@ import AutoCompleteSearchData from '../../data/SearchData';
 import ToggleButton from '../shared/ToggleButton';
 import { useNavigate } from 'react-router-dom';
 import LocationSelector from './LocationSelector';
+import '../css/Header.css';
 
 function Header({ text = 'Local Events', bgColor, txtColor }) {
   const navigate = useNavigate();

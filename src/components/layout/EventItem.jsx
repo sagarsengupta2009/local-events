@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import '../css/EventItem.css';
 
 function EventItem({ item }) {
     const navigate = useNavigate();

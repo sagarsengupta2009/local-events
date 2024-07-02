@@ -1,0 +1,38 @@
+/* Banner CSS */
+.banner {
+    width: 100%;
+    height: calc(100vh - 265px);
+    background-image: url('../../assets/eventBanner.jpg');
+    background-size: cover;
+    background-position: 69%;
+    border-radius: 10px;
+}
+
+.banner-text {
+    color: #fff;
+    padding-top: 100px;
+    margin-left: 50px;
+}
+
+.banner-text h2 {
+    letter-spacing: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.banner-text h1 {
+    margin-left: 5px;
+    font-size: 100px;
+}
+
+#banner_btn {
+    width: 130px;
+    height: 35px;
+    font-weight: bold;
+    background-color: #fff;
+    letter-spacing: 2px;
+    margin-left: 5%;
+    color: #716b6b;
+    border-radius: 20px;
+    border: none;
+}

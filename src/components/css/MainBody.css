@@ -1,0 +1,5 @@
+/* Main Body Container*/
+.main-body-container {
+    display: flex;
+    flex-flow: column;
+}

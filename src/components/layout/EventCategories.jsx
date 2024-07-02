@@ -9,6 +9,7 @@ import {
     FaHSquare,
     FaTasks
 } from 'react-icons/fa';
+import '../css/EventCategories.css'
 
 function EventCategories() {
     return (

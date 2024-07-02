@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux';
 import { motion, AnimatePresence } from 'framer-motion';
 import EventItem from "./EventItem";
 import Spinner from '../shared/Spinner';
+import '../css/EventsList.css';
 
 
 function EventsList() {

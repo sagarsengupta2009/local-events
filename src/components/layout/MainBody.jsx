@@ -1,6 +1,7 @@
 import Banner from "./Banner";
 import EventCategories from "./EventCategories";
 import EventsList from "./EventsList";
+import '../css/MainBody.css';
 
 function MainBody() {
     return (
