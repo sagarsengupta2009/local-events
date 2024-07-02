@@ -12,3 +12,13 @@ header {
     top: 0;
     z-index: 10;
 }
+
+header.header-container-light {
+    background-color: #fff;
+    color: #5468ff
+}
+
+header.header-container-dark {
+    background-color: #7f856d;
+    color: #333b28
+}

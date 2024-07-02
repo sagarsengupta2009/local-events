@@ -1,13 +1,16 @@
-import Stack from '@mui/material/Stack';
-import TextField from '@mui/material/TextField';
-import Autocomplete from '@mui/material/Autocomplete';
-import AutoCompleteSearchData from '../../data/SearchData';
-import ToggleButton from '../shared/ToggleButton';
+import '../css/Header.css';
+import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import LocationSelector from './LocationSelector';
-import '../css/Header.css';
+import ToggleButton from '../shared/ToggleButton';
+import ColorContext from '../../context/ColorContext';
+import Autocomplete from '@mui/material/Autocomplete';
+import AutoCompleteSearchData from '../../data/SearchData';
+import TextField from '@mui/material/TextField';
+import Stack from '@mui/material/Stack';
 
 function Header({ text = 'Local Events', bgColor, txtColor }) {
+  const { isDark } = useContext(ColorContext);
   const navigate = useNavigate();
   const headerStyles = {
     backgroundColor: "#fff",
@@ -19,7 +22,7 @@ function Header({ text = 'Local Events', bgColor, txtColor }) {
   }
 
   return (
-    <header style={headerStyles}>
+    <header className={`header-container-${isDark ? 'dark' : 'light'}`}>
       <div>
         <h2 onClick={handleOnClick} style={{ cursor: 'pointer' }}>{text}</h2>
       </div>
