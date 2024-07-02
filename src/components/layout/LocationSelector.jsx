@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import Spinner from '../shared/Spinner';
 import store from '../../state/store';
 import { filterOnLocation } from '../../state/eventsSlice';
+import '../css/LocationSelector.css';
 
 const LocationSelector = () => {
   const [selectedLocation, setSelectedLocation] = useState('');

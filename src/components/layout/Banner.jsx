@@ -1,3 +1,4 @@
+import '../css/Banner.css';
 
 function Banner() {
   return (

@@ -1,0 +1,8 @@
+/* Event Categories Container */
+.categories-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 10px 5px 5px rgb(138, 126, 126);
+    padding: 2% 4%;
+}

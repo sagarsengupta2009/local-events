@@ -4,42 +4,18 @@ const dbServerPort = 'http://localhost:5000';
 const ColorContext = createContext();
 
 export const ColorProvider = ({ children }) => {
-    const [isDark, setIsDark] = useState(true);
-    const [feedback, setFeedback] = useState([]);
+    const [isDark, setIsDark] = useState(false);
 
-    useEffect(() => {
-        fetchFeedback();
-    }, [])
-
-
-    const [feedbackEdit, setFeedbackEdit] = useState(
-        {
-            item: {},
-            edit: false
-        }
-    )
-
-
-
-    //Set item to be updated
-    const editFeedback = (item) => {
-        setFeedbackEdit({
-            item,
-            edit: true
-        })
+    const selectColorTheme = (binary) => {
+        setIsDark(binary);
     }
 
-    return <FeedbackContext.Provider value={{
-        feedback,
-        isLoading,
-        feedbackEdit,
-        deleteFeedback,
-        addFeedback,
-        editFeedback,
-        updateFeedback
+    return <ColorContext.Provider value={{
+        isDark,
+        selectColorTheme
     }}>
         {children}
-    </FeedbackContext.Provider>
+    </ColorContext.Provider>
 }
 
-export default FeedbackContext;
+export default ColorContext;

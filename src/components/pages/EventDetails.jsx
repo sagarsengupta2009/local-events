@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import Spinner from '../shared/Spinner';
+import '../css/EventDetails.css';
 
 function EventDetails() {
 

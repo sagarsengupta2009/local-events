@@ -1,0 +1,8 @@
+/* Event List CSS */
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0%;
+    justify-content: space-evenly;
+    /* height: calc(100vh - 50px); */
+}

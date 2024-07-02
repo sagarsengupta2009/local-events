@@ -1,10 +1,14 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import ColorContext from '../../context/ColorContext';
+import '../css/ToggleButton.css';
 
 export default function ToggleButton() {
   const [isToggled, setIsToggled] = useState(false);
+  const { selectColorTheme } = useContext(ColorContext);
 
   const handleChange = () => {
     setIsToggled(!isToggled);
+    selectColorTheme(!isToggled);
   };
 
   return (
