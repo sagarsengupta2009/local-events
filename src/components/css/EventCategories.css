@@ -6,3 +6,29 @@
     box-shadow: 10px 5px 5px rgb(138, 126, 126);
     padding: 2% 4%;
 }
+
+.icons,
+.edit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.25em;
+}
+
+.icons span {
+    font-size: 0.8rem;
+    padding-top: 5%;
+}
+
+.categories-container-light {
+    background-color: #fff;
+    color: #5468ff
+}
+
+.categories-container-dark {
+    background-color: #7f856d;
+    color: #5468ff
+}

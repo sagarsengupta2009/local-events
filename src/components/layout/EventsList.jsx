@@ -1,17 +1,20 @@
-import { useSelector } from 'react-redux';
-import { motion, AnimatePresence } from 'framer-motion';
-import EventItem from "./EventItem";
-import Spinner from '../shared/Spinner';
 import '../css/EventsList.css';
+import { useContext } from 'react';
+import { useSelector } from 'react-redux';
+import EventItem from "./EventItem";
+import ColorContext from '../../context/ColorContext';
+import Spinner from '../shared/Spinner';
+import { motion, AnimatePresence } from 'framer-motion';
 
 
 function EventsList() {
+  const { isDark } = useContext(ColorContext);
   const events = useSelector(state => { return state.events.data });
   const isLoading = useSelector(state => state.events.loading);
 
   return isLoading ?
     <Spinner /> : (
-      <div className='event-list'>
+      <div className={`event-list event-list-${isDark ? 'dark' : 'light'}`}>
         <AnimatePresence>
           {events.map((item) => (
             <motion.div

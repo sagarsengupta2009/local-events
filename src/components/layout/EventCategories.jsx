@@ -1,3 +1,6 @@
+import '../css/EventCategories.css';
+import { useContext } from 'react';
+import ColorContext from '../../context/ColorContext';
 import { 
     FaMusic, 
     FaFutbol, 
@@ -9,11 +12,12 @@ import {
     FaHSquare,
     FaTasks
 } from 'react-icons/fa';
-import '../css/EventCategories.css'
 
 function EventCategories() {
+    const { isDark } = useContext(ColorContext);
+
     return (
-        <div className='categories-container'>
+        <div className={`categories-container categories-container-${isDark ? 'dark' : 'light'}`}>
             <div>
                 <button className='icons'>
                     <FaMusic color="purple" />
