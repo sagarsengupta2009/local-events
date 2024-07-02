@@ -5,10 +5,7 @@ import Spinner from '../shared/Spinner';
 
 
 function EventsList() {
-  const events = useSelector(
-    state => {
-      return state.events.data
-    });
+  const events = useSelector(state => { return state.events.data });
   const isLoading = useSelector(state => state.events.loading);
 
   return isLoading ?

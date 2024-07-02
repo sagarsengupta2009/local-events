@@ -9,7 +9,7 @@ function EventDetails() {
     const isLoading = useSelector(state => state.events.loading);
 
     let selectedEvent = events.find(item => {
-        return item.id === Number(id);
+        return item.id === id;
     });
 
     const getImgName = (name) => {

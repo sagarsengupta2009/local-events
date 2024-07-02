@@ -50,7 +50,7 @@
             "category": "Drink",
             "date": "06/28/2024",
             "time": "9pm",
-            "city": "Mumbai",
+            "city": "Hyderabad",
             "venue": "Hotel Lalit",
             "desc": "A wonderful electronic musical journey with the world famous dj Ben Bohmer",
             "ticketPrice": "1999 INR"
@@ -61,7 +61,7 @@
             "category": "Standup Comedy",
             "date": "07/19/2024",
             "time": "9pm",
-            "city": "Mumbai",
+            "city": "Chennai",
             "venue": "Hotel Lalit",
             "desc": "A wonderful electronic musical journey with the world famous dj Ben Bohmer",
             "ticketPrice": "1999 INR"
@@ -83,7 +83,7 @@
             "category": "Play",
             "date": "11/23/2024",
             "time": "9pm",
-            "city": "Mumbai",
+            "city": "Pune",
             "venue": "Hotel Lalit",
             "desc": "A wonderful electronic musical journey with the world famous dj Ben Bohmer",
             "ticketPrice": "1999 INR"
@@ -105,7 +105,7 @@
             "category": "Standup Comedy",
             "date": "06/26/2024",
             "time": "9pm",
-            "city": "Mumbai",
+            "city": "Gurgaon",
             "venue": "Hotel Lalit",
             "desc": "A wonderful electronic musical journey with the world famous dj Ben Bohmer",
             "ticketPrice": "1999 INR"
@@ -116,7 +116,7 @@
             "category": "Standup Comedy",
             "date": "07/19/2024",
             "time": "9pm",
-            "city": "Mumbai",
+            "city": "Kolkata",
             "venue": "Hotel Lalit",
             "desc": "A wonderful electronic musical journey with the world famous dj Ben Bohmer",
             "ticketPrice": "1999 INR"
@@ -127,7 +127,7 @@
             "category": "Workshop",
             "date": "10/08/2024",
             "time": "9pm",
-            "city": "Mumbai",
+            "city": "Chandigarh",
             "venue": "Hotel Lalit",
             "desc": "A wonderful electronic musical journey with the world famous dj Ben Bohmer",
             "ticketPrice": "1999 INR"
@@ -138,7 +138,7 @@
             "category": "Play",
             "date": "11/23/2024",
             "time": "9pm",
-            "city": "Mumbai",
+            "city": "Hyderabad",
             "venue": "Hotel Lalit",
             "desc": "A wonderful electronic musical journey with the world famous dj Ben Bohmer",
             "ticketPrice": "1999 INR"
@@ -149,7 +149,7 @@
             "category": "Standup Comedy",
             "date": "06/26/2024",
             "time": "9pm",
-            "city": "Mumbai",
+            "city": "Kolkata",
             "venue": "Hotel Lalit",
             "desc": "A wonderful electronic musical journey with the world famous dj Ben Bohmer",
             "ticketPrice": "1999 INR"
@@ -160,21 +160,332 @@
             "category": "Standup Comedy",
             "date": "06/26/2024",
             "time": "9pm",
-            "city": "Mumbai",
+            "city": "Pune",
             "venue": "Hotel Lalit",
             "desc": "A wonderful electronic musical journey with the world famous dj Ben Bohmer",
             "ticketPrice": "1999 INR"
+        },
+        {
+            "id": 16,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Music",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Bangalore",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 17,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Drink",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Bangalore",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 18,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Sports",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Pune",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 19,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Music",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Chandigarh",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 20,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Music",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Gurgaon",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 21,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Play",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Hyderabad",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 22,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Standup Comedy",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Chennai",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 23,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Music",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Pune",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 24,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Sports",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Pune",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 25,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Workshop",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Chandigarh",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 26,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Drink",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Chennai",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 27,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Music",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Gurgaon",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 28,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Standup Comedy",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Mumbai",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 29,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Sports",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Bangalore",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 30,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Standup Comedy",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Kolkata",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 30,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Play",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Delhi",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 30,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Music",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Kolkata",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 30,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Drink",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Mumbai",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 31,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Workshop",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Chennai",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 32,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Play",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Hyderabad",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 33,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Music",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Kolkata",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 34,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Sports",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Delhi",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 35,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Play",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Gurgaon",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 36,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Drink",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Delhi",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 37,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Workshop",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Chandigarh",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 38,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Music",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Delhi",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 39,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Play",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Delhi",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
+        },
+        {
+            "id": 40,
+            "img": "require('../../assets/drinks.jpg')",
+            "category": "Drink",
+            "date": "07/21/2024",
+            "time": "7pm",
+            "city": "Delhi",
+            "venue": "Leela Palace",
+            "desc": "An amazing evening with Pandit Ravi Shankar",
+            "ticketPrice": "1500 INR"
         }
     ],
-    "locations": [
-        "Bangalore",
-        "Kolkata",
-        "Mumbai",
-        "Hyderabad",
-        "Delhi",
-        "Pune",
-        "Chennai",
-        "Chandigarh",
-        "Gurgaon"
-    ]
+    "locations": {
+        "id": 1,
+        "cities": [
+            "Bangalore",
+            "Kolkata",
+            "Mumbai",
+            "Hyderabad",
+            "Delhi",
+            "Pune",
+            "Chennai",
+            "Chandigarh",
+            "Gurgaon"
+        ]
+    }
 }
