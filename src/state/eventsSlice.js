@@ -1,5 +1,6 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice, current } from "@reduxjs/toolkit";
 
+let allEvents = [];
 const initialState = {
     data: [],
     loading: false,
@@ -9,7 +10,16 @@ const initialState = {
 const eventsSlice = createSlice({
     name: "allEvents",
     initialState,
-    reducers: {},
+    reducers: {
+        filterOnLocation: (state, action) => {
+            !action.payload ?
+                state.data =
+                allEvents :
+                state.data = allEvents.filter(item => {
+                    return item.city === action.payload;
+                });
+        }
+    },
     extraReducers: (builder) => {
         builder.addCase(fetchAllEvents.pending, (state) => {
             console.log('pending');
@@ -18,6 +28,7 @@ const eventsSlice = createSlice({
         builder.addCase(fetchAllEvents.fulfilled, (state, action) => {
             state.data = action.payload;
             state.loading = false;
+            allEvents = current(state).data;
         })
     }
 })
@@ -31,4 +42,5 @@ export const fetchAllEvents = createAsyncThunk(
     }
 );
 
+export const { filterOnLocation } = eventsSlice.actions;
 export default eventsSlice.reducer;

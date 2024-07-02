@@ -27,7 +27,7 @@ export const fetchCities = createAsyncThunk(
     async () => {
         const response = await fetch('http://localhost:5000/locations');
         const data = await response.json();
-        return data;
+        return data.cities;
     }
 );
 

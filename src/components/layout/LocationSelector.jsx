@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import Spinner from '../shared/Spinner';
+import store from '../../state/store';
+import { filterOnLocation } from '../../state/eventsSlice';
 
 const LocationSelector = () => {
   const [selectedLocation, setSelectedLocation] = useState('');
@@ -9,6 +11,7 @@ const LocationSelector = () => {
 
   const handleChange = (event) => {
     setSelectedLocation(event.target.value);
+    store.dispatch(filterOnLocation(event.target.value));
   };
 
   return isLoading ?
