@@ -23,6 +23,11 @@
     padding-top: 5%;
 }
 
+.icons:hover {
+    transform: scale(1.2);
+    color: #333b28;
+}
+
 .categories-container-light {
     background-color: #fff;
     color: #5468ff
@@ -30,5 +35,5 @@
 
 .categories-container-dark {
     background-color: #7f856d;
-    color: #5468ff
+    color: #333b28
 }

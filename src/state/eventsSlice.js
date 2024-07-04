@@ -18,6 +18,11 @@ const eventsSlice = createSlice({
                 state.data = allEvents.filter(item => {
                     return item.city === action.payload;
                 });
+        },
+        filterOnCategory: (state, action) => {
+            state.data = allEvents.filter(item => {
+                return item.category === action.payload;
+            });
         }
     },
     extraReducers: (builder) => {
@@ -42,5 +47,5 @@ export const fetchAllEvents = createAsyncThunk(
     }
 );
 
-export const { filterOnLocation } = eventsSlice.actions;
+export const { filterOnLocation, filterOnCategory } = eventsSlice.actions;
 export default eventsSlice.reducer;

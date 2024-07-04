@@ -1,6 +1,6 @@
 /* Event Details CSS */
 .details-container {
-    max-width: 1200px;
+    max-width: 96%;
     margin: 0 auto;
     padding: 20px;
 }
@@ -13,7 +13,6 @@
 }
 
 .event-details {
-    background-color: #fff;
     padding: 20px;
     margin-top: 20px;
     border-radius: 8px;
@@ -51,4 +50,14 @@
 
 .description h2 {
     margin-top: 2%;
+}
+
+.details-container-light {
+    background-color: #fff;
+    color: #333;
+}
+
+.details-container-dark {
+    background-color: #7f856d;
+    color: #333b28;
 }

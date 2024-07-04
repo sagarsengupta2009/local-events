@@ -1,10 +1,12 @@
+import { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import Spinner from '../shared/Spinner';
 import '../css/EventDetails.css';
+import ColorContext from '../../context/ColorContext';
 
 function EventDetails() {
-
+    const { isDark } = useContext(ColorContext);
     const { id } = useParams(); // Get id from route params
     const events = useSelector(state => state.events.data);
     const isLoading = useSelector(state => state.events.loading);
@@ -19,7 +21,7 @@ function EventDetails() {
 
     return isLoading ?
         <Spinner /> : (
-            <div className="details-container">
+            <div className={`details-container details-container-${isDark ? 'dark' : 'light'}`}>
                 <img src={require(`../../assets/${getImgName(selectedEvent.category)}.jpg`)} alt="Intezaar Tera Tour - Raghav Meattle" className="event-image" />
                 <div className="event-details">
                     <h1>{selectedEvent.category}</h1>

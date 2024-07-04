@@ -1,12 +1,14 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { useSelector } from 'react-redux';
 import Spinner from '../shared/Spinner';
 import store from '../../state/store';
 import { filterOnLocation } from '../../state/eventsSlice';
 import '../css/LocationSelector.css';
+import ColorContext from '../../context/ColorContext';
 
 const LocationSelector = () => {
   const [selectedLocation, setSelectedLocation] = useState('');
+  const { isDark } = useContext(ColorContext);
   const locations = useSelector(state => state.cities.data);
   const isLoading = useSelector(state => state.events.loading);
 
@@ -23,7 +25,7 @@ const LocationSelector = () => {
             id="location-select"
             value={selectedLocation}
             onChange={handleChange}
-            className="location-dropdown"
+            className={`location-dropdown location-dropdown-${isDark ? 'dark' : 'light'}`}
           >
             <option value="">Select Location</option>
             {locations.map((location, index) => (
