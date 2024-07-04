@@ -31,7 +31,6 @@
 .card-content p {
     font-size: 0.9rem;
     margin-bottom: 5px;
-    color: #666;
 }
 
 .card-content .btn {
@@ -58,4 +57,14 @@
     width: 100px;
     height: 40px;
     cursor: pointer;
+}
+
+.card-content-light {
+    background-color: #fff;
+    color: #666;
+}
+
+.card-content-dark {
+    background-color: #7f856d;
+    color: #333b28;
 }
