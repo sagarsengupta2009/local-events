@@ -8,8 +8,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 
 function EventsList() {
+  // console.log(useSelector)
   const { isDark } = useContext(ColorContext);
-  const events = useSelector(state => { return state.events.data });
+  const events = useSelector(state => { 
+    // console.log( state.events)
+    return state.events.data });
+  // console.log(events)
   const isLoading = useSelector(state => state.events.loading);
 
   return isLoading ?

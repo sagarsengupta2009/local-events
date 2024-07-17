@@ -4,15 +4,14 @@
     flex-wrap: wrap;
     gap: 0%;
     justify-content: space-evenly;
-    /* height: calc(100vh - 50px); */
 }
 
 .event-list-light {
-    background-color: #fff;
+    background-color: #efebeb;
     color: #5468ff
 }
 
 .event-list-dark {
-    background-color: #7f856d;
+    background-color: #6c715e;
     color: #5468ff
 }

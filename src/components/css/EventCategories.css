@@ -3,7 +3,6 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    box-shadow: 10px 5px 5px rgb(138, 126, 126);
     padding: 2% 4%;
 }
 
@@ -30,10 +29,12 @@
 
 .categories-container-light {
     background-color: #fff;
-    color: #5468ff
+    color: #5468ff;
+    box-shadow: 10px 5px 5px rgb(138, 126, 126);
 }
 
 .categories-container-dark {
     background-color: #7f856d;
-    color: #333b28
+    color: #333b28;
+    box-shadow: 10px 5px 5px rgb(67 69 52);
 }
