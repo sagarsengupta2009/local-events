@@ -9,7 +9,7 @@ import { fetchAllEvents } from './state/eventsSlice';
 import { fetchCities } from './state/citiesSlice';
 
 // Loading all events on load of application
-store.dispatch(fetchAllEvents())
+store.dispatch(fetchAllEvents());
 //Loading all locations
 store.dispatch(fetchCities());
 

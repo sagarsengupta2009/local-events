@@ -1,6 +1,6 @@
 /* Event Details CSS */
 .details-container {
-    max-width: 96%;
+    max-width: 99%;
     margin: 0 auto;
     padding: 20px;
 }
@@ -58,6 +58,6 @@
 }
 
 .details-container-dark {
-    background-color: #7f856d;
+    background-color: #6c715e;
     color: #333b28;
 }
