@@ -19,6 +19,10 @@ const citiesSlice = createSlice({
             state.data = action.payload;
             state.loading = false;
         })
+        builder.addCase(fetchCities.rejected, (state) => {
+            state.loading = false;
+            state.error = true;
+        })
     }
 })
 
