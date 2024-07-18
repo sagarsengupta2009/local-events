@@ -5,21 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './state/store';
-import { fetchAllEvents } from './state/eventsSlice';
-import { fetchCities } from './state/citiesSlice';
-
-// Loading all events on load of application
-store.dispatch(fetchAllEvents());
-//Loading all locations
-store.dispatch(fetchCities());
+import ErrorBoundary from './components/errorboundary/ErrorBoundary';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Provider store={store}>
+  <Provider store={store}>
+    <ErrorBoundary>
       <App />
-    </Provider>
-  </React.StrictMode>
+    </ErrorBoundary>
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function

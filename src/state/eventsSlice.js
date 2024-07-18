@@ -35,6 +35,10 @@ const eventsSlice = createSlice({
             state.loading = false;
             allEvents = current(state).data;
         })
+        builder.addCase(fetchAllEvents.rejected, (state) => {
+            state.loading = false;
+            state.error = true;
+        })
     }
 })
 
